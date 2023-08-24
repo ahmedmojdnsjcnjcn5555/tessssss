@@ -1,0 +1,198 @@
+
+<head>
+  <!-- <link rel="stylesheet" href="index1.css"> -->
+  <link rel="stylesheet" href="2.css ">
+  <!-- <link rel="stylesheet" href="style.css "> -->
+  <link rel="stylesheet" href="assets\css\style.css ">
+  <link rel="stylesheet" href="shopping/style.css ">
+  <link rel="stylesheet" href="style.css ">
+  <link rel="shortcut icon" href="icon.jpg" type="x-icon">
+
+</head>
+<body>
+  
+  <div class="search-container">
+         
+          
+  </div>
+</div>
+<!-- <div class="total"> -->
+  <div class="total1">
+<!-- <h2>total</h2> -->
+<div class="menu">
+ 
+</div>
+
+    <div class="total">
+
+    </div>
+  </div>
+<!-- <div class="topnav1"> -->
+  <div class="topnav">
+    
+    <!-- <P style="font-size: large;color: red; justify-self: right;">total =600$ </p> -->
+    <!-- <a href="products 1.php" class="btn btn_info">product</a> -->
+<!-- <a href="products 1.php" class="btn btn_info">product</a> -->
+<!-- <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #eff1f5 ; width: 50px; "></i> -->
+<!-- <i class="fa-regular fa-cart-shopping fa-xl" style="color: #eff1f5;"></i> -->
+<!-- <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #eff1f5;"></i> -->
+
+<nav class="nav-bar">
+  <div class="logo">
+      <h1>Logo</h1>
+  </div>
+  <div class="nav-list">
+      <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+      </ul>
+  </div>
+  <div class="login-button">
+      <button><a href="#">Entrar</a></button>
+  </div>
+
+  <div class="mobile-menu-icon">
+      <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <ul>
+      <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+  </ul>
+
+  <div class="login-button">
+      <button><a href="#">Entrar</a></button>
+  </div>
+</div>
+      </div>
+      </div>
+      <div class="topbaner">
+
+      </div>
+      
+      <div id="banar">
+
+
+        
+    <div class="slider">
+      <div class="list">
+          <div class="item">
+              <img src="img/1.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="img/2.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="img/3.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="img/4.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="img/5.jpg" alt="">
+          </div>
+      </div>
+      <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+      </div>
+      <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+  </div>
+        <p>hhhh</p>
+      </div>
+     
+
+
+
+
+
+      <form method="post" class="box" action="">
+        <div class="table">
+          <table class="table table-hover table-border  p" >
+   <div class="clearfix">
+  <div><img class="img2" src="images/<?= $product['img']?>" alt="Pineapple"  width="170" height="170"></div>
+        <div class="prod">
+          <p >dddddd-hhhhhh</p>
+          <div class="num">
+            </div>
+            <p class="car">aaaa=car</p>
+            
+          </div>
+              <div class="price">      
+                <del>20000  </del>              
+                <p>  بدلا من </p>                     
+                <p>  5000 </p> 
+                <div class="flex-w bo5 of-hidden w-size17">         
+                  <input type="hidden" name="id" value="<?= $product['id']; ?>">
+            
+  
+                  <input type="hidden" name="id" value="<?= $product['id']; ?>">
+                  <input type="hidden" name="name" value="<?= $product['username']; ?>">
+                  <input type="hidden" name="description" value="<?= $product['description']; ?>">
+                  <input type="hidden" name="price" value="<?= $product['price']; ?>">
+                  <!-- <input type="hidden" name="cat" value="<?= $product['cat']; ?>"> -->
+                  <input type="hidden" name="sale" value="<?= $product['sale']; ?>">
+                  <input type="hidden" name="num" value="<?= $product['num']; ?>">
+                  <!-- <input type="hidden" name="quanty" value="<?= $product['id']; ?>"> -->
+                  <!-- <input type="hidden" name="saleid" value="<?= $product['quantity']; ?>"> -->
+                  <!-- <input type="number" min="1" name="quantity" value="1"> -->
+                 
+                        <button id="sub">-</button>
+                        <input type="number"  name= "quantity"class="qtyBox"  value="55">
+                        <button id="addnum">+</button>
+                       
+  
+                      
+    <script type="text/javascript">
+      let addBtn = document.querySelector('#addnum');
+      let subBtn = document.querySelector('#sub');
+      let qty = document.querySelector('.qtyBox');
+      
+      addBtn.addEventListener('click',()=>{
+        qty.value = parseInt(qty.value) + 1;
+      });
+      
+      subBtn.addEventListener('click',()=>{
+        if (qty.value <= 0) {
+          qty.value = 0;
+        }
+        else{
+          qty.value = parseInt(qty.value) - 1;
+        }
+      });
+      
+      
+      
+      
+      </script>
+  
+                  
+  
+        </from>
+                     
+              </div>
+            </div>
+          </div>
+          </table> 
+          </form>
+        
+   
+      
+        
+
+     
+      
+    </div>
+  <script src="assets\js\script.js"></script>
+  <script src="app.js"></script>
+    </body>
+    </html>
